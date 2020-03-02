@@ -1,3 +1,45 @@
+function generateCharacter(character_type) {
+    switch(character_type) {
+        case 'uppercase': return String.fromCharCode ( Math.floor ( (Math.random() * ( 90 - 65 ) + 65 ) ) ); // ASCII range for Uppercase
+          break;
+        case 'lowercase': return String.fromCharCode ( Math.floor ( Math.random() * ( 122 - 97 ) + 97 ) ) ; // ASCII range for Lowercase
+          break;
+        case 'number': return String.fromCharCode ( Math.floor ( Math.random() * (58 - 48) + 48 ) ); // ASCII range for Digits
+            break;
+        case 'special_character': return String.fromCharCode(Math.floor( Math.random() * ( 64 - 32 ) + 32 ) ); // ASCII range for Special Characters
+            break;
+        default:
+      }
+}
+
+function generatePassword(expected_password_length,final_combination_of_character_types) {
+    let password = '';
+
+    for (let i = 0; i < expected_password_length; i++) {
+        //generate random character type from final_combination_of_character_types Array
+        let random_character_type = final_combination_of_character_types[ Math.floor(Math.random() * final_combination_of_character_types.length) ];
+        let generated_character = generateCharacter(random_character_type);
+        password += generated_character;
+    }
+    return password;
+}
+
+function includeSpecialCharacters(chosen_character_types,include_special_characters) {
+    if(include_special_characters == 'true') { 
+        chosen_character_types.push("special_character");}
+    return chosen_character_types;
+}
+
+function getPasswordLength() {
+    let password_length = document.getElementById("password-length").value;
+    if (password_length >= 8 && password_length <= 128){
+        return password_length;
+    }
+    else{
+        alert("Password length must be between 8 - 128 characters");
+    }
+}
+
 function getCharacterTypes() {
     let character_type = [];
     character_type = document.querySelectorAll('input[name="character-type[]"]:checked');
