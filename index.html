@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Password Generator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+  <body>
+      <div class="container-fluid">
+          <div class="container password_generator rounded">
+              <div class="row p-2">
+                  <div class="col bg-dark text-light  text-center rounded">
+                      <h1 class="display-4">PASSWORD GENERATOR</h1>
+                  </div>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col">
+                            <div class="form-group pt-5 pb-3">
+                                <input type="text" class="form-control" id="password">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container" >
+                      <div class="row">
+                          <div class="col-md-2 border border-secondary rounded p-2 m-2">
+                              <p class="font-weight-bold">Character Types</p>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox"  name="character-type[]" id="lowercase" value="lowercase" >
+                                <label class="form-check-label" for="lowercase">
+                                  Lowercase
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character-type[]" id="uppercase" value="uppercase">
+                                <label class="form-check-label" for="uppercase">
+                                  Uppercase
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character-type[]" id="number" value="number"> 
+                                <label class="form-check-label" for="numbers">
+                                  Numbers
+                                </label>
+                              </div>
+                          </div>
+                          <div class="col-md-2 border border-secondary rounded p-2 m-2">
+                            <p class="font-weight-bold">Special Characters</p>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="specialcharacters[]" id="special-characters-1" value="true">
+                                <label class="form-check-label" for="special-characters-1">
+                                  Include
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="specialcharacters[]" id="special-characters-0" value="false">
+                                <label class="form-check-label" for="special-characters-0">
+                                  Exclude
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-md-7 border border-secondary rounded p-2 m-2">
+                            <p class="font-weight-bold">Length - <span id="password-length-display">00</span></p>
+                            
+                            <input type="range" class="w-100" id="password-length" min="8" max="128" >
+                        </div>
+                      </div>
+                  </div>
+                  <div class="container p-3 m-1">
+                    <div class="row">
+                     <div class="col text-center">
+                       <button type="submit" class="bg-dark text-light p-2" id="generate-password">Generate Password</button>
+                     </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/password_generator.js"></script>
+</body>
+</html>
