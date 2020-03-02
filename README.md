@@ -4,8 +4,7 @@ Application that generates a random password based on user-selected criteria
 
 ![](https://github.com/udara/password_generator/blob/master/img/index_lg_ss.jpg)
 
-![](https://github.com/udara/password_generator/blob/master/img/index_sm_ss.jpg)
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![](https://github.com/udara/password_generator/blob/master/img/index_sm_ss.JPG)
 
 ## User Story ##
 
