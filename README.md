@@ -1,6 +1,8 @@
-# password_generator #
+# Password Generator #
 
 Application that generates a random password based on user-selected criteria
+
+https://udara.github.io/password_generator/
 
 ![](https://github.com/udara/password_generator/blob/master/img/index_lg_ss.jpg)
 
