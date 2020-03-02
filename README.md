@@ -2,9 +2,10 @@
 
 Application that generates a random password based on user-selected criteria
 
-![](img/index_lg_lg.jpg)
+![](https://github.com/udara/password_generator/blob/master/img/index_lg_ss.jpg)
 
-![](img/index_lg_sm.jpg)
+![](https://github.com/udara/password_generator/blob/master/img/index_sm_ss.jpg)
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 ## User Story ##
 
