@@ -21,10 +21,16 @@
                       <div class="row">
                           <div class="col">
                             <div class="form-group pt-5 pb-3">
-                                <input type="text" class="form-control" id="password">
+                                <input type="text" class="form-control" id="password" placeholder="Click generate password button">
                               </div>
                           </div>
                       </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group text-danger" id="errors">
+                            </div>
+                        </div>
+                    </div>
                   </div>
                   <div class="container" >
                       <div class="row">
@@ -67,7 +73,7 @@
                         <div class="col-md-7 border border-secondary rounded p-2 m-2">
                             <p class="font-weight-bold">Length - <span id="password-length-display">00</span></p>
                             
-                            <input type="range" class="w-100" id="password-length" min="8" max="128" >
+                            <input type="range" class="w-100" id="password-length" min="8" max="129">
                         </div>
                       </div>
                   </div>
